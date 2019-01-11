@@ -83,5 +83,6 @@ public class ShowAdActivity extends AppCompatActivity {
         webView.destroy();
         webView = null;
 
+        Log.d("wangyuchao","commit1");
     }
 }
