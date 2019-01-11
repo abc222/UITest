@@ -82,10 +82,5 @@ public class ShowAdActivity extends AppCompatActivity {
         Log.d("wangyuchao","onStop");
         webView.destroy();
         webView = null;
-
-        Log.d("wangyuchao","commit1");
-        Log.d("wangyuchao","commit2");
-        Log.d("wangyuchao","commit3");
-
     }
 }
