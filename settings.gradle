@@ -1,0 +1,1 @@
+include ':app', ':prizewheellibrary', ':AlgorithmTest'

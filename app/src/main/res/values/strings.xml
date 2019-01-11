@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UITest</string>
+
+    <!--rating dialog-->
+    <string name="apprater_rate_us">Rate Us</string>
+    <string name="apprater_textview1_before">Enjoying this game?</string>
+    <string name="apprater_textview1_after">Give us 5 stars</string>
+    <string name="apprater_textview2">Rate us by clicking stars</string>
+    <string name="apprater_button_text">Go to GooglePlay to Rate</string>
+</resources>
