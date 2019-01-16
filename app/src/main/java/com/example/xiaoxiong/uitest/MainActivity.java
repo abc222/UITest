@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.xiaoxiong.uitest.facebooktest.FacebookNativeAdActivity;
 import com.example.xiaoxiong.uitest.piechartdemo.PieViewTestActivity;
 import com.example.xiaoxiong.uitest.prizewheeldemo.PrizeWheelActivity;
 import com.example.xiaoxiong.uitest.ratingdialog.AppRaterActivity;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.pie_view_test).setOnClickListener(this);
         findViewById(R.id.rating_dialog_test).setOnClickListener(this);
         findViewById(R.id.webview_test).setOnClickListener(this);
+        findViewById(R.id.facebook_test).setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent4 = new Intent(this, WebViewTestActivity.class);
                 startActivity(intent4);
                 break;
+            case R.id.facebook_test:
+                Intent intent5 = new Intent(this, FacebookNativeAdActivity.class);
+                startActivity(intent5);
                 default:
                     break;
         }
