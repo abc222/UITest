@@ -18,7 +18,7 @@ public class GlideTestActivity extends AppCompatActivity {
 
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         Glide.with(this)
-                .load(R.drawable.pikachu)
+                .load(url)
                 .into(imageView);
 
     }
