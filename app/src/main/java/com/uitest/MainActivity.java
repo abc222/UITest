@@ -11,7 +11,7 @@ import com.uitest.piechartdemo.PieViewTestActivity;
 import com.uitest.prizewheeldemo.PrizeWheelActivity;
 import com.uitest.ratingdialog.AppRaterActivity;
 import com.uitest.webviewtest.WebViewTestActivity;
-import com.uitest.weeksighin.stepview.ui.activity.WeekSighinActivity;
+import com.uitest.weeksighin.ui.activity.WeekSighinActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 

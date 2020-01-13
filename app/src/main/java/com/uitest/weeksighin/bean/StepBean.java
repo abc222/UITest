@@ -1,4 +1,4 @@
-package com.uitest.weeksighin.stepview.bean;
+package com.uitest.weeksighin.bean;
 
 /**
  * description: 签到bean.

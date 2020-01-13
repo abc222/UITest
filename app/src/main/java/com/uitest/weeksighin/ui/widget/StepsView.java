@@ -1,4 +1,4 @@
-package com.uitest.weeksighin.stepview.ui.widget;
+package com.uitest.weeksighin.ui.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,8 +11,8 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.uitest.R;
-import com.uitest.weeksighin.stepview.bean.StepBean;
-import com.uitest.weeksighin.stepview.utils.CalcUtils;
+import com.uitest.weeksighin.bean.StepBean;
+import com.uitest.weeksighin.utils.CalcUtils;
 
 import java.util.ArrayList;
 import java.util.List;

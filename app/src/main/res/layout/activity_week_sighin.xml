@@ -39,7 +39,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <com.uitest.weeksighin.stepview.ui.widget.StepsView
+    <com.uitest.weeksighin.ui.widget.StepsView
         android:id="@+id/step_view"
         android:layout_below="@id/rl_oval"
         android:layout_marginTop="20dp"

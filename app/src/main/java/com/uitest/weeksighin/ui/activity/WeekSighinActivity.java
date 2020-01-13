@@ -1,4 +1,4 @@
-package com.uitest.weeksighin.stepview.ui.activity;
+package com.uitest.weeksighin.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,9 +7,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.uitest.R;
-import com.uitest.weeksighin.stepview.bean.SignListReq;
-import com.uitest.weeksighin.stepview.bean.StepBean;
-import com.uitest.weeksighin.stepview.ui.widget.StepsView;
+import com.uitest.weeksighin.bean.SignListReq;
+import com.uitest.weeksighin.bean.StepBean;
+import com.uitest.weeksighin.ui.widget.StepsView;
 import com.google.gson.Gson;
 
 import java.text.ParseException;

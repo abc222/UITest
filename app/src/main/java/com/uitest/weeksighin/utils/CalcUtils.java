@@ -1,4 +1,4 @@
-package com.uitest.weeksighin.stepview.utils;
+package com.uitest.weeksighin.utils;
 
 import android.content.Context;
 

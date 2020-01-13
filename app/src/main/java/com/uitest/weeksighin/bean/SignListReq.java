@@ -1,4 +1,4 @@
-package com.uitest.weeksighin.stepview.bean;
+package com.uitest.weeksighin.bean;
 
 import java.util.List;
 
