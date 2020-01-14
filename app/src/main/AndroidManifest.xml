@@ -34,6 +34,8 @@
         </activity>
         <activity android:name=".weeksighin.ui.activity.WeekSighinActivity">
         </activity>
+        <activity android:name=".scratchview.ScratchTestActivity">
+        </activity>
     </application>
 
 </manifest>

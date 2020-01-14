@@ -12,4 +12,8 @@
     <color name="c_f7b93c">#f7b93c</color>
     <color name="c_41c961">#41c961</color>
     <color name="c_d5a872">#d5a872</color>
+
+    <!--scratchview-->
+    <color name="scratch_start_gradient">#e5e5e5</color>
+    <color name="scratch_end_gradient">#cccccc</color>
 </resources>

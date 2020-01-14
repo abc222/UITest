@@ -10,6 +10,7 @@ import com.uitest.openscreenpic.GlideTestActivity;
 import com.uitest.piechartdemo.PieViewTestActivity;
 import com.uitest.prizewheeldemo.PrizeWheelActivity;
 import com.uitest.ratingdialog.AppRaterActivity;
+import com.uitest.scratchview.ScratchTestActivity;
 import com.uitest.webviewtest.WebViewTestActivity;
 import com.uitest.weeksighin.ui.activity.WeekSighinActivity;
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.facebook_test).setOnClickListener(this);
         findViewById(R.id.glide_test).setOnClickListener(this);
         findViewById(R.id.weeksighin_test).setOnClickListener(this);
+        findViewById(R.id.scratchview_test).setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +61,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.weeksighin_test:
                 Intent intent7 = new Intent(this, WeekSighinActivity.class);
                 startActivity(intent7);
+                break;
+            case R.id.scratchview_test:
+                Intent intent8 = new Intent(this, ScratchTestActivity.class);
+                startActivity(intent8);
                 break;
                 default:
                     break;
