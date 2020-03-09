@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.uitest"
-          xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uitest">
 
     <application
         android:name=".MyApplication"
@@ -12,28 +10,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".dropanimation.snowdemo.SnowActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".prizewheeldemo.PrizeWheelActivity">
-        </activity>
-        <activity android:name=".piechartdemo.PieViewTestActivity">
-        </activity>
-        <activity android:name=".ratingdialog.AppRaterActivity">
-        </activity>
-        <activity android:name=".webviewtest.WebViewTestActivity">
-        </activity>
-        <activity android:name=".webviewtest.ShowAdActivity">
-        </activity>
-        <activity android:name=".openscreenpic.GlideTestActivity">
-        </activity>
-        <activity android:name=".weeksighin.ui.activity.WeekSighinActivity">
-        </activity>
-        <activity android:name=".scratchview.ScratchTestActivity">
-        </activity>
+        <activity android:name=".prizewheeldemo.PrizeWheelActivity"></activity>
+        <activity android:name=".piechartdemo.PieViewTestActivity"></activity>
+        <activity android:name=".ratingdialog.AppRaterActivity"></activity>
+        <activity android:name=".webviewtest.WebViewTestActivity"></activity>
+        <activity android:name=".webviewtest.ShowAdActivity"></activity>
+        <activity android:name=".openscreenpic.GlideTestActivity"></activity>
+        <activity android:name=".weeksighin.ui.activity.WeekSighinActivity"></activity>
+        <activity android:name=".scratchview.ScratchTestActivity"></activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
