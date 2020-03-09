@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.uitest.facebooktest.FacebookNativeAdActivity;
 import com.uitest.openscreenpic.GlideTestActivity;
 import com.uitest.piechartdemo.PieViewTestActivity;
 import com.uitest.prizewheeldemo.PrizeWheelActivity;
@@ -25,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.pie_view_test).setOnClickListener(this);
         findViewById(R.id.rating_dialog_test).setOnClickListener(this);
         findViewById(R.id.webview_test).setOnClickListener(this);
-        findViewById(R.id.facebook_test).setOnClickListener(this);
         findViewById(R.id.glide_test).setOnClickListener(this);
         findViewById(R.id.weeksighin_test).setOnClickListener(this);
         findViewById(R.id.scratchview_test).setOnClickListener(this);
@@ -49,10 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.webview_test:
                 Intent intent4 = new Intent(this, WebViewTestActivity.class);
                 startActivity(intent4);
-                break;
-            case R.id.facebook_test:
-                Intent intent5 = new Intent(this, FacebookNativeAdActivity.class);
-                startActivity(intent5);
                 break;
             case R.id.glide_test:
                 Intent intent6 = new Intent(this, GlideTestActivity.class);

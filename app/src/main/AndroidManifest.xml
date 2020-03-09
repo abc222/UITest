@@ -28,8 +28,6 @@
         </activity>
         <activity android:name=".webviewtest.ShowAdActivity">
         </activity>
-        <activity android:name=".facebooktest.FacebookNativeAdActivity">
-        </activity>
         <activity android:name=".openscreenpic.GlideTestActivity">
         </activity>
         <activity android:name=".weeksighin.ui.activity.WeekSighinActivity">
