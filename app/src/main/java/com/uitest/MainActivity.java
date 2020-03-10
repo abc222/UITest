@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.uitest.animation.AnimatorActivity;
 import com.uitest.dropanimation.coindemo.DropCoinActivity;
-import com.uitest.dropanimation.snowdemo.SnowActivity;
 import com.uitest.openscreenpic.GlideTestActivity;
 import com.uitest.piechartdemo.PieViewTestActivity;
 import com.uitest.prizewheeldemo.PrizeWheelActivity;
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.weeksighin_test).setOnClickListener(this);
         findViewById(R.id.scratchview_test).setOnClickListener(this);
         findViewById(R.id.drop_test).setOnClickListener(this);
+        findViewById(R.id.animator_test).setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +67,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.drop_test:
                 Intent intent9 = new Intent(this, DropCoinActivity.class);
                 startActivity(intent9);
+                break;
+            case R.id.animator_test:
+                Intent intent10 = new Intent(this, AnimatorActivity.class);
+                startActivity(intent10);
                 break;
                 default:
                     break;
