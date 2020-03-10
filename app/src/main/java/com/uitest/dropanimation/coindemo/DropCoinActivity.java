@@ -1,5 +1,6 @@
 package com.uitest.dropanimation.coindemo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
@@ -16,12 +17,13 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.uitest.R;
+import com.uitest.dropanimation.snowdemo.SnowActivity;
 
 public class DropCoinActivity extends AppCompatActivity {
 
     // 金币掉落动画的主体动画
     private CoinView coinView;
-    private Button btnAll, btnthree;
+    private Button btnAll, btnthree, snowDemo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class DropCoinActivity extends AppCompatActivity {
         coinView = new CoinView(this);
         btnAll = (Button) findViewById(R.id.btn_all_time);
         btnthree = (Button) findViewById(R.id.btn_amin);
+        snowDemo = (Button) findViewById(R.id.btn_snow);
         btnAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +44,13 @@ public class DropCoinActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showPopWindows(btnAll, "20", false);
+            }
+        });
+        snowDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DropCoinActivity.this, SnowActivity.class);
+                startActivity(intent);
             }
         });
     }
