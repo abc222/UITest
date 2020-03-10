@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.uitest.dropanimation.coindemo.DropCoinActivity;
 import com.uitest.dropanimation.snowdemo.SnowActivity;
 import com.uitest.openscreenpic.GlideTestActivity;
 import com.uitest.piechartdemo.PieViewTestActivity;
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent8);
                 break;
             case R.id.drop_test:
-                Intent intent9 = new Intent(this, SnowActivity.class);
+                Intent intent9 = new Intent(this, DropCoinActivity.class);
                 startActivity(intent9);
                 break;
                 default:

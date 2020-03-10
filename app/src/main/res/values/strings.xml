@@ -7,4 +7,7 @@
     <string name="apprater_textview1_after">Give us 5 stars</string>
     <string name="apprater_textview2">Rate us by clicking stars</string>
     <string name="apprater_button_text">Go to GooglePlay to Rate</string>
+
+    <!--drop animation-->
+    <string name="action_settings">Settings</string>
 </resources>
