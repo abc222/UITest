@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.uitest.animation.AnimatorActivity;
+import com.uitest.broadcastdemo.BroadcastTestActivity;
 import com.uitest.dropanimation.coindemo.DropCoinActivity;
 import com.uitest.openscreenpic.GlideTestActivity;
 import com.uitest.piechartdemo.PieViewTestActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.scratchview_test).setOnClickListener(this);
         findViewById(R.id.drop_test).setOnClickListener(this);
         findViewById(R.id.animator_test).setOnClickListener(this);
+        findViewById(R.id.broadcast_test).setOnClickListener(this);
     }
 
     @Override
@@ -72,6 +74,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent10 = new Intent(this, AnimatorActivity.class);
                 startActivity(intent10);
                 break;
+            case R.id.broadcast_test:
+                Intent intent11 = new Intent(this, BroadcastTestActivity.class);
+                startActivity(intent11);
                 default:
                     break;
         }

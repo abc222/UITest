@@ -42,7 +42,7 @@ public class CoinView extends View {
      */
     public CoinView(Context context) {
         super(context);
-        droid = BitmapFactory.decodeResource(getResources(), R.drawable.drop_coin);
+        droid = BitmapFactory.decodeResource(getResources(), R.drawable.drop_money);
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         textPaint.setColor(Color.WHITE);
         textPaint.setTextSize(24);

@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".animation.AnimatorActivity"></activity>
+        <activity android:name=".broadcastdemo.BroadcastTestActivity" />
+
+        <activity android:name=".animation.AnimatorActivity" />
         <activity android:name=".dropanimation.coindemo.DropCoinActivity" />
         <activity android:name=".dropanimation.snowdemo.SnowActivity" />
         <activity android:name=".MainActivity">

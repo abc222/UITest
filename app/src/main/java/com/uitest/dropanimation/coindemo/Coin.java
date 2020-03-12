@@ -38,16 +38,19 @@ public class Coin {
         // height
         DisplayMetrics metrics = DvAppUtil.getDisplayMetrics(Context);
         if (metrics.widthPixels >= 1080) {
-            coin.width = (int) (5 + (float) Math.random() * 80);
+            // coin.width = (int) (5 + (float) Math.random() * 80);
+            coin.width = (int) (20 + (float) Math.random() * 80);
             float hwRatio = originalBitmap.getHeight()
                     / originalBitmap.getWidth();
+            // coin.height = (int) (coin.width * hwRatio + 60);
             coin.height = (int) (coin.width * hwRatio + 60);
         } else {
-            coin.width = (int) (5 + (float) Math.random() * 50);
+            // coin.width = (int) (5 + (float) Math.random() * 50);
+            coin.width = (int) (10 + (float) Math.random() * 50);
             float hwRatio = originalBitmap.getHeight()
                     / originalBitmap.getWidth();
-            coin.height = (int) (coin.width * hwRatio + 40);
-
+            //coin.height = (int) (coin.width * hwRatio + 40);
+            coin.height = (int) (coin.width * hwRatio + 30);
         }
         // Position the coin horizontally between the left and right of the
         // range
