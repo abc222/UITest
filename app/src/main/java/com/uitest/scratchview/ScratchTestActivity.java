@@ -28,31 +28,31 @@ public class ScratchTestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scratch_test);
-//        ScratchImageView scratchImageView = new ScratchImageView(this);
-//
-//        scratchImageView.setRevealListener(new ScratchImageView.IRevealListener() {
-//            @Override
-//            public void onRevealed(ScratchImageView tv) {
-//                // on reveal
-//            }
-//
-//            @Override
-//            public void onRevealPercentChangedListener(ScratchImageView siv, float percent) {
-//                // on image percent reveal
-//            }
-//        });
-//
-//        YScratchView mScratchView = findViewById(R.id.guaguaka3);
-//
-//        mScratchView.setScratchListener(new YScratchView.ScratchListener() {
-//            @Override
-//            public void finish() {
-//
-//            }
-//        });
+        ScratchImageView scratchImageView = new ScratchImageView(this);
 
-        LinearLayout layout=(LinearLayout) findViewById(R.id.main);
-        layout.addView(new CanvasTestView(this));
+        scratchImageView.setRevealListener(new ScratchImageView.IRevealListener() {
+            @Override
+            public void onRevealed(ScratchImageView tv) {
+                // on reveal
+            }
+
+            @Override
+            public void onRevealPercentChangedListener(ScratchImageView siv, float percent) {
+                // on image percent reveal
+            }
+        });
+
+        YScratchView mScratchView = findViewById(R.id.guaguaka3);
+
+        mScratchView.setScratchListener(new YScratchView.ScratchListener() {
+            @Override
+            public void finish() {
+
+            }
+        });
+
+//        LinearLayout layout=(LinearLayout) findViewById(R.id.main);
+//        layout.addView(new CanvasTestView(this));
 
     }
 }
