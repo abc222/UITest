@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
-<!--    <com.uitest.scratchviewdemo.cooltechworks.views.ScratchImageView-->
-<!--        android:id="@+id/sample_image"-->
-<!--        android:layout_width="200dp"-->
-<!--        android:layout_height="200dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:background="@drawable/motivate_scratch_surface"-->
-<!--        android:src="@drawable/img_sample2">-->
-<!--    </com.uitest.scratchviewdemo.cooltechworks.views.ScratchImageView>-->
+<!--    <com.uitest.scratchview.CustomImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:borderRadius="50dp"-->
+<!--        app:src="@drawable/drop_money"-->
+<!--        app:type="circle" />-->
 
-    <com.uitest.scratchview.GuaGuaKa
-        android:layout_centerInParent="true"
+    <com.uitest.scratchview.guaguaka1.GuaGuaKa
+        android:id="@+id/guagauka1"
         android:layout_width="300dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal" />
 
+    <com.uitest.scratchview.guaguaka2.ScratchImageView
+        android:id="@+id/guaguaka2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+
+    <com.uitest.scratchview.guaguaka3.YScratchView
+        android:id="@+id/guaguaka3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/scratchview_surface" />
 </LinearLayout>

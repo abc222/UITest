@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WaveLoadView">
+        <attr name="wave_load_mode" format="enum">
+            <enum name="icon" value="1" />
+            <enum name="color" value="2" />
+        </attr>
+        <attr name="wave_load_auto_load" format="boolean" />
+        <attr name="wave_load_icon" format="reference" />
+        <attr name="wave_load_color" format="reference|color" />
+        <attr name="wave_load_show_text" format="boolean" />
+        <attr name="wave_load_text_size" format="dimension" />
+        <attr name="wave_load_duration" format="integer" />
+        <attr name="wave_load_stroke_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="YScratchView">
+        <attr name="scratch_radius" format="dimension" />
+        <attr name="scratch_mark_color" format="color|reference" />
+        <attr name="scratch_drawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="YSwitchView">
+        <attr name="switch_bar_radius" format="dimension" />
+        <attr name="switch_open_color" format="color|reference" />
+        <attr name="switch_close_color" format="reference" />
+        <attr name="switch_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" format="dimension" />
+        <attr name="type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="src" format="reference" />
+    </declare-styleable>
+
+</resources>

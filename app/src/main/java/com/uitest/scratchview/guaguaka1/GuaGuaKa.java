@@ -1,4 +1,4 @@
-package com.uitest.scratchview;
+package com.uitest.scratchview.guaguaka1;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -47,7 +47,7 @@ public class GuaGuaKa extends View
 	// private Bitmap mBackBitmap;
 	private boolean isComplete;
 
-	private Paint mBackPint = new Paint();
+	private Paint mBackPaint = new Paint();
 	private Rect mTextBound = new Rect();
 	private String mText = "￥500,0000";
 
@@ -73,58 +73,10 @@ public class GuaGuaKa extends View
 	private void init()
 	{
 		mPath = new Path();
-		// mBackBitmap = BitmapFactory.decodeResource(getResources(),
-		// R.drawable.t2);
+		// mBackBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.t2);
 		setUpOutPaint();
 		setUpBackPaint();
 
-	}
-
-	/**
-	 * 初始化canvas的绘制用的画笔
-	 */
-	private void setUpBackPaint()
-	{
-		mBackPint.setStyle(Style.FILL);
-		mBackPint.setTextScaleX(2f);
-		mBackPint.setColor(Color.DKGRAY);
-		mBackPint.setTextSize(32);
-		mBackPint.getTextBounds(mText, 0, mText.length(), mTextBound);
-	}
-
-	@Override
-	protected void onDraw(Canvas canvas)
-	{
-		// canvas.drawBitmap(mBackBitmap, 0, 0, null);
-		// 绘制奖项
-		canvas.drawText(mText, getWidth() / 2 - mTextBound.width() / 2,
-				getHeight() / 2 + mTextBound.height() / 2, mBackPint);
-		if (!isComplete)
-		{
-			drawPath();
-			canvas.drawBitmap(mBitmap, 0, 0, null);
-		}
-
-	}
-
-	@Override
-	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
-	{
-		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
-		int width = getMeasuredWidth();
-		int height = getMeasuredHeight();
-		// 初始化bitmap
-		mBitmap = Bitmap.createBitmap(width, height, Config.ARGB_8888);
-		mCanvas = new Canvas(mBitmap);
-
-		// 绘制遮盖层
-		// mCanvas.drawColor(Color.parseColor("#c0c0c0"));
-		mOutterPaint.setStyle(Style.FILL);
-		mCanvas.drawRoundRect(new RectF(0, 0, width, height), 30, 30,
-				mOutterPaint);
-		mCanvas.drawBitmap(BitmapFactory.decodeResource(getResources(),
-				R.drawable.scratchview_surface), null, new RectF(0, 0, width, height), null);
 	}
 
 	/**
@@ -145,13 +97,58 @@ public class GuaGuaKa extends View
 	}
 
 	/**
+	 * 初始化canvas的绘制用的画笔
+	 */
+	private void setUpBackPaint()
+	{
+		mBackPaint.setStyle(Style.FILL);
+		mBackPaint.setTextScaleX(2f);
+		mBackPaint.setColor(Color.DKGRAY);
+		mBackPaint.setTextSize(32);
+		mBackPaint.getTextBounds(mText, 0, mText.length(), mTextBound);
+	}
+
+	@Override
+	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+	{
+		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+		int width = getMeasuredWidth();
+		int height = getMeasuredHeight();
+		// 初始化bitmap
+		mBitmap = Bitmap.createBitmap(width, height, Config.ARGB_8888);
+		mCanvas = new Canvas(mBitmap);
+
+		// 绘制遮盖层
+		// mCanvas.drawColor(Color.parseColor("#c0c0c0"));
+		mOutterPaint.setStyle(Style.FILL);
+		mCanvas.drawRoundRect(new RectF(0, 0, width, height), 30, 30, mOutterPaint);
+		mCanvas.drawBitmap(BitmapFactory.decodeResource(getResources(),
+				R.drawable.scratchview_surface), null, new RectF(0, 0, width, height), null);
+	}
+
+	@Override
+	protected void onDraw(Canvas canvas)
+	{
+		// canvas.drawBitmap(mBackBitmap, 0, 0, null);
+		// 绘制奖项
+		canvas.drawText(mText, getWidth() / 2 - mTextBound.width() / 2,
+				getHeight() / 2 + mTextBound.height() / 2, mBackPaint);
+		if (!isComplete)
+		{
+			drawPath();
+			canvas.drawBitmap(mBitmap, 0, 0, null);
+		}
+
+	}
+
+	/**
 	 * 绘制线条
 	 */
 	private void drawPath()
 	{
 		mOutterPaint.setStyle(Style.STROKE);
-		mOutterPaint
-				.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OUT));
+		mOutterPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OUT));
 		mCanvas.drawPath(mPath, mOutterPaint);
 	}
 

@@ -45,12 +45,6 @@ import com.uitest.R;
  */
 public class ScratchImageView extends AppCompatImageView {
 
-
-    public interface IRevealListener {
-        public void onRevealed(ScratchImageView iv);
-        public void onRevealPercentChangedListener(ScratchImageView siv, float percent);
-    }
-
     public static final float STROKE_WIDTH = 12f;
 
     private float mX, mY;
@@ -129,14 +123,6 @@ public class ScratchImageView extends AppCompatImageView {
     }
 
     /**
-     * Set the strokes width based on the parameter multiplier.
-     * @param multiplier can be 1,2,3 and so on to set the stroke width of the paint.
-     */
-    public void setStrokeWidth(int multiplier) {
-        mErasePaint.setStrokeWidth(multiplier * STROKE_WIDTH);
-    }
-
-    /**
      * Initialises the paint drawing elements.
      */
     private void init() {
@@ -166,6 +152,14 @@ public class ScratchImageView extends AppCompatImageView {
 
     }
 
+    /**
+     * Set the strokes width based on the parameter multiplier.
+     * @param multiplier can be 1,2,3 and so on to set the stroke width of the paint.
+     */
+    public void setStrokeWidth(int multiplier) {
+        mErasePaint.setStrokeWidth(multiplier * STROKE_WIDTH);
+    }
+
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -192,14 +186,6 @@ public class ScratchImageView extends AppCompatImageView {
         canvas.drawPath(mErasePath, mErasePaint);
 
     }
-
-    private void touch_start(float x, float y) {
-        mErasePath.reset();
-        mErasePath.moveTo(x, y);
-        mX = x;
-        mY = y;
-    }
-
 
     /**
      * clears the scratch area to reveal the hidden image.
@@ -293,6 +279,13 @@ public class ScratchImageView extends AppCompatImageView {
                 break;
         }
         return true;
+    }
+
+    private void touch_start(float x, float y) {
+        mErasePath.reset();
+        mErasePath.moveTo(x, y);
+        mX = x;
+        mY = y;
     }
 
     public int getColor() {
@@ -446,6 +439,9 @@ public class ScratchImageView extends AppCompatImageView {
         return new int[] {left, top, left + width, top + height};
     }
 
-
+    public interface IRevealListener {
+        public void onRevealed(ScratchImageView iv);
+        public void onRevealPercentChangedListener(ScratchImageView siv, float percent);
+    }
 
 }
